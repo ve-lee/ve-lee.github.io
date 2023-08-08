@@ -1,0 +1,124 @@
+title: Ve Lee
+subtitle: Web Engineer
+description: >- # this means to ignore newlines until "baseurl:"
+  Ve Lee is a developper, passionate about new technologies.
+
+url: "https://ve-lee.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+
+remote_theme: ve-lee/darkyll
+
+# Navigation
+urls:
+    - text: Home
+      url: /
+    - text: About
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
+    # - text: Shop
+    #   url : /shop
+    - text: Contact
+      url : /contact
+
+
+# Edit Author details (For multi authors check _data/authors.yml)
+
+author_logo: Zoltan2x2.png
+author: Ve Lee
+author_bio: Hi, my name is Ve Lee. I am passionate about new technologies and development :D
+author_email: "mem.acia@gmail.com"
+author_location: France
+author_website_url: "https://ve-lee.github.io"
+typewrite-text: I am a Solution Engineer, passionate about development.
+hero_cover_img: cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+
+# social links
+twitter_username: roberbui
+github_username:  ve-lee
+
+# wakatime username (coding activity)
+wakatime_username: Ve_lee
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: false
+
+# Experiences
+author_work_experiences:
+            - company_name: Monaco Parkings
+              company_logo: mp.png
+              company_url: https://parkings.mc
+              designation: Main Controller
+              description: Worked on various CMS Products
+              visibility: true
+            - company_name: Blue Wave Software
+              company_logo: bws.png
+              company_url: https://www.bluewave.mc/
+              designation: Developer
+              description: Worked on various CMS Products
+              visibility: true
+
+# Education
+author_education_details:
+              - college_logo: supinfo.jpg
+                college_name: SUPINFO
+                college_url: https://supinfo.com
+                college_degree: CS Engineer
+                description: Bachelor of Technology
+                visibility: true
+
+# Projects
+author_project_details:
+              - project_thumbnail: gamershub.png
+                project_title: Gamers Hub
+                project_description: A Platform built for Gamers and Game Devs
+                project_url: https://gamershub.in
+                visibility: true
+              - project_thumbnail: hack4r.PNG
+                project_title: Hack4r
+                project_description: A Platform built for Hackers and Penetration Testers
+                project_url: https://hack4r.com
+                visibility: true
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+collections:
+  products:
+    output: true
+  authors:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /blog/authors/:slug
+  -
+    scope:
+      path: 'assets/**'
+    values:
+      sitemap: false
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-remote-theme
+  
+destination: ./build
