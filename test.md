@@ -2,4 +2,4 @@
 layout: page
 ---
 
-{{ site.authors }}
+{{ site.authors["velee"] }}
