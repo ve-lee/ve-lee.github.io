@@ -3,7 +3,7 @@
   directory: lolz
   preview:
     filename: 1.png
-    original: 1-thumbnail.jpg
+    original: 1.png
     sizes:
-    - 1-thumbnail.jpg
-    thumbnail: 1-thumbnail.jpg
+    - 1.png
+    thumbnail: 1.png
