@@ -2,4 +2,4 @@
 layout: page
 ---
 
-{{ site.collections }}
+{{ site.authors }}
