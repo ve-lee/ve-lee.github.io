@@ -1,0 +1,17 @@
+picture_path: lolz
+preview:
+  filename: 1
+  original: 1.png
+  sizes:
+  - 1.png
+  thumbnail: 1.png
+pictures:
+- filename: 1
+  original: 1.png
+  sizes:
+  - 1.png
+  thumbnail: 1.png
+- filename: 2
+  original: 2.jpg
+  sizes:
+  - 2.jpg
