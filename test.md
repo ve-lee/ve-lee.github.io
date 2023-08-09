@@ -2,4 +2,4 @@
 layout: page
 ---
 
-{{ site.authors["velee"] }}
+{{ site.collections | where: "label", "authors" | first }}
