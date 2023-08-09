@@ -2,4 +2,5 @@
 layout: page
 ---
 
-{{ site.collections | where: "label", "authors" | first }}
+{% assign author = site.authors | where: "username", "velee" | first %}
+{{ author.avatar }}
